@@ -1,0 +1,10 @@
+@import '../../../styles/mixin';
+
+
+.mat-card {
+  @include mat-card-layout;
+}
+
+.content-container {
+  @include content-container-layout;
+}

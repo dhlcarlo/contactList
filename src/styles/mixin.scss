@@ -1,0 +1,80 @@
+@import 'theme';
+
+
+$primary: mat-palette($mat-blue, 800);
+
+@mixin primary-color {
+  $primary-color: map-get($primary, 800);
+  color: $primary-color;
+}
+@mixin primary-background-contrast-color {
+  $primary-color: map-get($primary, 800);
+  background-color: $primary-color;
+  color: white !important;
+}
+
+
+@mixin mat-card-layout {
+  width: 100%;
+  padding: 0px;
+  .mat-card-header {
+    background-color: gray;
+    padding: 18px 12px 6px 24px;
+    color: #ffffff;
+  }
+  .mat-card-content {
+    padding: 24px;
+  }
+}
+
+@mixin editarea-margins {
+  button {
+    margin: 0.5em 1em;
+  }
+  .editfields {
+    margin: 1em;
+    .mat-form-field {
+      width: 100%;
+    }
+  }
+}
+
+@mixin control-panel-layout {
+  margin: 8px;
+  margin-left: 1em;
+  display: flex;
+  flex-flow: column wrap;
+  > * {
+    flex: 1 100%;
+  }
+  .button-panel {
+    flex: 1 auto;
+    margin: 8px 0px;
+    order: 1;
+  }
+  .filter-panel {
+    flex: 1 auto;
+    margin: 8px 0px;
+    order: 2;
+  }
+}
+
+@mixin content-container-layout {
+  display: flex;
+  flex-flow: row wrap;
+  > * {
+    flex: 1 100%;
+  }
+  .list-container {
+    flex: 1 auto;
+    order: 1;
+    max-width: 30em;
+  }
+  .detail-container {
+    flex: 1 auto;
+    order: 2;
+    max-width: 22em;
+  }
+}
+
+

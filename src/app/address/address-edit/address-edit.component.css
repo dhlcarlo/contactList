@@ -1,0 +1,14 @@
+
+.mat-form-field {
+    display: block;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.has-padding {
+    padding-top: 1.5em;
+}
+

@@ -1,0 +1,31 @@
+.wrap {
+  margin: 16px;
+}
+
+.content {
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+}
+
+.has-padding-left{
+    padding-left: 0.3em;
+}
+
+
+.pointer {
+  cursor: pointer;
+}
+
+.icon {
+  position: relative !important;
+  top: 5px !important;
+  left: 5px !important;
+  margin-right: 10px !important;
+}
+
+.right {
+  float: right;
+}

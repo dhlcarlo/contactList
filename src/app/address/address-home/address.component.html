@@ -1,0 +1,11 @@
+<div class="page-content">
+    <app-address-edit  (addressUpdate)="OnAddressUpdate($event)" [editAddress]="editAddress"></app-address-edit>
+  <mat-card>
+      <mat-card-header>
+        <mat-card-title>List of address</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <app-address-list [listOfAddress]="listOfAddress" (onSelectItem)="onEditar($event)"></app-address-list>
+      </mat-card-content>
+    </mat-card>
+</div>

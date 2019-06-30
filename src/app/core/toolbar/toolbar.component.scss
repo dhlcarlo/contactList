@@ -1,0 +1,53 @@
+@import '../../../styles/mixin';
+
+.pull-right {
+  position: fixed !important;
+  right: 8px;
+}
+
+.ng-title-icon > i {
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 1.2em;
+}
+
+.title {
+  margin-right: 1em;
+}
+
+.item {
+  margin-left: 16px;
+}
+
+.item,
+a {
+  vertical-align: middle;
+}
+
+.router-link-active {
+  @include primary-background-contrast-color;
+}
+
+.footer-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  > * {
+    // padding: 10px;
+    // flex: 1 100%;
+    display: flex;
+  }
+}
+
+.commands {
+  flex: 18 0px;
+  order: 1;
+  align-self: center;
+  padding-left: 8px;
+}
+
+
+.row-commands {
+  height: 40px;
+  border-top: 1px solid white;
+}
